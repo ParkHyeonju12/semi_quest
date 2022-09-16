@@ -99,7 +99,7 @@ body {
 }
 .char_text {
     width: 1139px;
-    padding: 50px 60px 60px 80px;
+    padding: 70px 60px 60px 80px;
 }
 .chat_top{
     position: absolute;
@@ -113,7 +113,7 @@ body {
 }
 /* 쓰담위크 START */
 .sec_title {
-    margin: 180px auto 45px auto;
+    margin: 100px auto 45px auto;
     text-align: center;
 }
 .game_wrap{
@@ -131,6 +131,7 @@ body {
     padding-top: 20%;
     line-height: 120%;
     text-align: center;
+    padding-bottom: 20px;
 }
 .game_wrap{
     position: relative;
@@ -145,11 +146,97 @@ body {
     top: 10%;
     right: 14%;
 }
-.city_wrap>li{
+.city_wrap{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.city_wrap>li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
     /* font-size: 4.5em; */
 }
+.city {
+    position: relative;
+}
+.poly{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -50px;
+}
+
+.with {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: -80px;
+}
+.org, .white {
+    font-size: 4.5em;
+}
+.org {
+    position: absolute; 
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+}
+.white {
+    color:transparent;
+    z-index: 1;
+} 
+.stop_wrap {
+    margin-top: 195px;
+    text-align: center;
+}
+.stop {
+    margin-bottom: 50px;
+}
+.chat_textBox {
+    width: 1059px;
+    text-align: left;
+    color: black;
+    background-color: white;
+    padding: 40px 10px 40px 50px;
+    font-size: 1.5em;
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+}
+.char_text1{
+    width: 1139px;
+    padding: 0px 60px 60px 20px;
+}
+.chat {
+    position: relative;
+}
+.textImg1,.textImg2 {
+    width: 1064px;
+}
+.textImg1 {
+    position: absolute;
+    top: -15px;
+    left: -2px;
+}
+.she{
+    color: white;
+}
+/* sec2 css */
+.chat_div {
+    margin-bottom: 40px;
+}
+.sec2_top{
+    background: url(../img/bg_sea_top.png) no-repeat top center;
+    background-size: cover;
+    padding-bottom: 30%;
+}
+.sec2_bt {
+    background: url(../img/bg_sea_bt.png) no-repeat center center;
+    background-size: cover  ;
+    padding-bottom: 11%;
+}   
 @font-face {
   font-family: 'DungGeunMo';
   src: url('../font/DungGeunMo.ttf') format('woff');
