@@ -11,6 +11,8 @@ body {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 2;
+    position: relative;
 }
 .logo_wrap {
     padding-top: 100px;
@@ -32,7 +34,6 @@ body {
     letter-spacing: 13px;
     height: 100px;
 }
-
 .center {
     text-align: center;
 }
@@ -100,6 +101,10 @@ body {
 .char_text {
     width: 1139px;
     padding: 70px 60px 60px 80px;
+}
+.char_text1 {
+    width: 1139px;
+    padding: 70px 60px 60px 20px;
 }
 .chat_top{
     position: absolute;
@@ -205,7 +210,7 @@ body {
     border-left: 8px solid black;
     border-right: 8px solid black;
 }
-.char_text1{
+.char_text2{
     width: 1139px;
     padding: 0px 60px 60px 20px;
 }
@@ -227,16 +232,73 @@ body {
 .chat_div {
     margin-bottom: 40px;
 }
-.sec2_top{
-    background: url(../img/bg_sea_top.png) no-repeat top center;
-    background-size: cover;
-    padding-bottom: 30%;
+.sec2_bgImg>div img{
+    width: 100%;
 }
-.sec2_bt {
-    background: url(../img/bg_sea_bt.png) no-repeat center center;
-    background-size: cover  ;
-    padding-bottom: 11%;
-}   
+.sec2_bgImg {
+    z-index: 1;
+    position: relative;
+}
+.sea_top {
+    z-index: 1;
+    position: absolute;
+    top: -320px;
+}
+.sea_bt {
+    position: absolute;
+    top: 1050px;
+    z-index: 0;
+}
+.sec2_bg {
+    position: relative;
+    z-index: 1;
+}
+.push_btn, .trash, .person {
+    position: absolute;
+    z-index: 2;
+}
+.push_btn{
+    width: 300px;
+    top: 720px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.trash_img{
+    position: absolute;
+    top: 850px;
+    left: 2000px;
+    width: 800px;
+}
+.person1 {
+    width: 10em;
+    position: absolute;
+    top: 700px;
+    left: 3500px;
+}
+.person2{
+    width: 10em;
+    position: absolute;
+    top: 700px;
+    left: 4000px;
+}
+.mark1{
+    position: absolute;
+    top: 630px;
+    left: 3350px;
+    
+}
+.mark2{
+    position: absolute;
+    top: 630px;
+    left: 3860px;
+}
+
+.person>.mk{
+    width: 7em;
+}
+
+
 @font-face {
   font-family: 'DungGeunMo';
   src: url('../font/DungGeunMo.ttf') format('woff');

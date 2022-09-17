@@ -22,3 +22,4 @@ cityLi.mouseleave(function(){
     wt.eq(index).css("display","none");
     clearInterval(interval);
 })
+
