@@ -5,6 +5,7 @@ body {
     font-family: DungGeunMo;
     color: white;
 }
+
 #quick {
   position: fixed;
   right: 5%;
@@ -31,7 +32,7 @@ body {
     padding: 0 20px;
 }
 .top_title{
-    border: 5px solid #e9c70c;
+    border: 5px solid #F2DF3A;
     border-radius: 70px;
     padding: 7px;
     margin-bottom: 60px;
@@ -42,12 +43,12 @@ body {
   padding: 7px;
 }
 .border3 {
-  border: 5px solid #381ed5;
+  border: 5px solid #3AB4F2;
   border-radius: 50px;
   padding: 40px;
 }
 .top>h5 {
-  color: #381ed5;
+  color: #3AB4F2;
   font-size: 4em;
 }
 .top {
@@ -75,7 +76,7 @@ body {
 .flag_title {
   margin-bottom: 20px;
   font-size: 1.875em;
-  color: #ffda0f;
+  color: #F2DF3A;
   position: relative;
 }
 .form_box {
@@ -89,10 +90,26 @@ body {
     background: #b3b3b3;
     color: #111;
     width: 100%;
-    border-top: px solid #767575;
+    border-top:  2px solid #767575;
     border-left: 2px solid #767575;
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
+}
+.count_input > span {
+  height: 50px;
+  background: #b3b3b3;
+  border-bottom: 2px solid #767575;
+  border-right: 2px solid #767575;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  color: #333;
+  font-size: 26px;
+  width: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 .get_item .input_grey {
   width: 100px;
@@ -114,7 +131,7 @@ body {
   position: absolute;
 }
 .yellow{
-  color: yellow;
+  color: #F2DF3A;
 }
 .org {
   position: relative;
@@ -134,9 +151,6 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-.count_input > span {
-  margin: 0 10px;
-}
 .count_input>input {
   width: 100px;
 }
@@ -148,7 +162,7 @@ body {
 .form_cont{
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 .photo_img>img {
   height: 200px;
@@ -166,6 +180,68 @@ body {
   height: 165px;
   padding: 15px 20px; 
 }
+.sub_btn {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 37px;
+}
+.sub_btn {
+  background: url(../img/address.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 126px;
+  height: 37px;
+  cursor: pointer;
+  background-size: contain;
+  text-align: center;
+}
+.filebox label {
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  /* line-height: normal; */
+  vertical-align: middle;
+  cursor: pointer;
+  transform: rotate(-0.03deg);
+  margin-right: 20px;
+}
+.filebox1, .filebox2{
+  text-align: left;
+}
+.flex1 {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.button_su:hover {
+  border: 5px sol
+  id #fff;
+}
+.button_su {
+  width: 75%;
+  overflow: hidden;
+  position: relative;
+  font-size: 2.325em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 5px solid #e9c70c;
+  overflow: hidden;
+  transition: all 0.7s;
+  position: relative;
+  cursor: pointer;
+  padding: 20px;
+  background: transparent;
+}
+.form_bt {
+  justify-content: space-between;
+}
+
+
 @font-face {
   font-family: 'DungGeunMo';
   src: url('../font/DungGeunMo.ttf') format('woff');
