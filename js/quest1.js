@@ -32,3 +32,11 @@ cityLi.mouseleave(function(){
     clearInterval(interval);
 })
 
+
+/*쓰담 위크 퀘스트에서 지역 선택했을 때, step1으로 넘어가는 기능*/ 
+// city.on("click",function(){
+//     let index = $(this).index();
+//     if(index == 0){
+//         location ="quest2.html"
+//     }
+// });
